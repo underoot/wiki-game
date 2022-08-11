@@ -142,7 +142,9 @@ function App() {
         <div ref={resultsRef}>
           <Box paddingBottom={8}>
             <Box paddingY={4} display="flex" justifyContent="center">
-              <Button onClick={onTryAgain} variant="contained">Try again</Button>
+              <Box paddingRight={2}>
+                <Button onClick={onTryAgain} variant="contained">Try again</Button>
+              </Box>
               <Button onClick={onCopyResults} variant="contained" color="secondary">Copy</Button>
             </Box>
             <Grid container className="results" spacing={2}>
