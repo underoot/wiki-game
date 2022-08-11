@@ -107,10 +107,10 @@ function App() {
   return (
     <Container maxWidth='sm'>
       <p>
-        Wikipedia is a wonderfull place: a black hole to <a href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" target="_blank" rel="noreferrer">Wonderland</a>
+        Wikipedia is a wonderful place: a black hole to <a href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" target="_blank" rel="noreferrer">Wonderland</a>
       </p>
       <p>
-        There is <a href="https://www.newyorker.com/magazine/2022/04/25/wikipedia-in-the-flesh" target="_blank" rel="noreferrer">comedy show about Wikipedia</a>, fan groups and enthusiasts. But one of the interesting thing about Wikipedia that you can go to any pages of Wikipedia and by, at most, 5 clicks go to <a href="https://en.wikipedia.org/wiki/Adolf_Hitler" target="_blank" rel="noreferrer">Adolf Hitler</a> page. Try it here. Put in the box below any word from <a href="https://en.wikipedia.org/">English Wikipedia</a> and let's see...
+        There is <a href="https://www.newyorker.com/magazine/2022/04/25/wikipedia-in-the-flesh" target="_blank" rel="noreferrer">a comedy show about Wikipedia</a>, fan groups and enthusiasts. But one of the interesting things about Wikipedia is that you can go to any page of Wikipedia and, at most, by 5 clicks go to <a href="https://en.wikipedia.org/wiki/Adolf_Hitler" target="_blank" rel="noreferrer">Adolf Hitler</a> page. Try it here. Put in the box below any word from <a href="https://en.wikipedia.org/">English Wikipedia</a> and let's see...
       </p>
       {!isLoading && !error && results.length === 0 && (
         <Box paddingY={4} display="flex" justifyContent="center">
