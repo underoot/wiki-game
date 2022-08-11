@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wiki-game/static/css/main.82ea5a88.css",
-    "main.js": "/wiki-game/static/js/main.71033e21.js",
+    "main.js": "/wiki-game/static/js/main.0b1d53ec.js",
     "static/js/787.73239830.chunk.js": "/wiki-game/static/js/787.73239830.chunk.js",
     "index.html": "/wiki-game/index.html",
     "main.82ea5a88.css.map": "/wiki-game/static/css/main.82ea5a88.css.map",
-    "main.71033e21.js.map": "/wiki-game/static/js/main.71033e21.js.map",
+    "main.0b1d53ec.js.map": "/wiki-game/static/js/main.0b1d53ec.js.map",
     "787.73239830.chunk.js.map": "/wiki-game/static/js/787.73239830.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82ea5a88.css",
-    "static/js/main.71033e21.js"
+    "static/js/main.0b1d53ec.js"
   ]
 }
