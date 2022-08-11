@@ -1,7 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {useSearchParams} from 'react-router-dom';
 import {Container, TextField, Button, Box, CircularProgress, Grid} from '@mui/material';
 
 type PageResult = {
@@ -25,8 +23,6 @@ const getPageResults = async (page: string) => {
 }
 
 function App() {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [shareId] = React.useState(() => searchParams.get('shareId'));
   const [pageName, setPageName] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
   const [results, setResults] = React.useState<PageResult[]>([]);
@@ -61,10 +57,10 @@ function App() {
   return (
     <Container maxWidth='sm'>
       <p>
-        Wikipedia is a wonderfull place: a black hole to <a href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" target="_blank">Wonderland</a>
+        Wikipedia is a wonderfull place: a black hole to <a href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" target="_blank" rel="noreferrer">Wonderland</a>
       </p>
       <p>
-        There is <a href="https://www.newyorker.com/magazine/2022/04/25/wikipedia-in-the-flesh" target="_blank">comedy show about Wikipedia</a>, fan groups and enthusiasts. But one of the interesting thing about Wikipedia that you can go to any pages of Wikipedia and by, at most, 5 clicks go to <a href="https://en.wikipedia.org/wiki/Adolf_Hitler" target="_blank">Adolf Hitler</a> page. Try it here. Put in the box below any word from <a href="https://en.wikipedia.org/">English Wikipedia</a> and let's see...
+        There is <a href="https://www.newyorker.com/magazine/2022/04/25/wikipedia-in-the-flesh" target="_blank" rel="noreferrer">comedy show about Wikipedia</a>, fan groups and enthusiasts. But one of the interesting thing about Wikipedia that you can go to any pages of Wikipedia and by, at most, 5 clicks go to <a href="https://en.wikipedia.org/wiki/Adolf_Hitler" target="_blank" rel="noreferrer">Adolf Hitler</a> page. Try it here. Put in the box below any word from <a href="https://en.wikipedia.org/">English Wikipedia</a> and let's see...
       </p>
       {!isLoading && results.length === 0 && (
         <Box paddingY={4} display="flex" justifyContent="center">
@@ -89,7 +85,7 @@ function App() {
           <Grid container className="results" spacing={2}>
             {results.map((r, idx) => (
               <Grid item xs={12} key={r.pageName}>
-                <a href={r.pageLink} target='_blank'>
+                <a href={r.pageLink} target='_blank' rel="noreferrer">
                   <Box className='results__image'>
                     {r.imageUrl && <div style={{backgroundImage: `url(${r.imageUrl}`}}></div>}
                   </Box>
